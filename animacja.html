@@ -1,0 +1,44 @@
+<head>
+<style>
+
+	@keyframes nazwaAnimacji{
+		0% {
+			opacity:0.5;
+			background-color: red;
+		}
+		50% {
+			opacity:1;
+			background-color: green;
+		}
+		100% {
+			opacity:1;
+			background-color: yellow;
+		}
+	}
+	
+	@keyframes animacja2{
+		100%{
+			transform: rotate( 180deg );
+		}
+	}
+	.box1{
+		/*
+		-webkit-animation: animacja 4s 2s infinite;
+		-moz-animation: 
+		-o-animation:
+		-ms-animation:
+		*/
+		
+		animation: nazwaAnimacji 4s,
+					animacja2 3s;
+		background-color: red;
+		width: 20%;
+		height: 20%;
+	}
+</style>
+
+</head>
+
+<body>
+<div class="box1"> </div>
+</body>
